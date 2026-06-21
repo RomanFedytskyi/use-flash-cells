@@ -1,0 +1,89 @@
+{
+  "name": "use-flash-cells",
+  "version": "1.0.0",
+  "description": "Headless React hook that tracks per-cell value changes in fintech data tables and exposes up/down/null flash direction — composable with MUI DataGrid, TanStack Table, react-data-grid, or any renderer. Zero runtime dependencies. Never write a DIY price-flash loop again.",
+  "keywords": [
+    "react",
+    "hook",
+    "table",
+    "datagrid",
+    "fintech",
+    "flash",
+    "cell-flash",
+    "price-flash",
+    "real-time",
+    "mui",
+    "mui-datagrid",
+    "tanstack-table",
+    "react-table",
+    "trading",
+    "stock",
+    "ticker",
+    "typescript",
+    "headless",
+    "composable"
+  ],
+  "license": "MIT",
+  "author": "Roman Fedytskyi <fedytskyi@gmail.com>",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run typecheck && npm run build && npm test"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.3.1",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitest/coverage-v8": "^2.0.0",
+    "jsdom": "^24.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanFedytskyi/use-flash-cells.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RomanFedytskyi/use-flash-cells/issues"
+  },
+  "homepage": "https://github.com/RomanFedytskyi/use-flash-cells#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Fedytskyi
+    given-names: Roman
+    email: fedytskyi@gmail.com
+    orcid: ""
+title: "use-flash-cells"
+version: 1.0.0
+doi: 10.5281/zenodo.20798420
+date-released: 2026-06-22
+url: "https://github.com/RomanFedytskyi/use-flash-cells"
+repository-code: "https://github.com/RomanFedytskyi/use-flash-cells"
+license: MIT
+abstract: >
+  Headless React hook that tracks per-cell numeric value changes in financial
+  data tables and exposes 'up' | 'down' | null flash direction per cell.
+  Composable with MUI DataGrid, TanStack Table, react-data-grid, or any
+  renderer. Zero runtime dependencies.
+keywords:
+  - react
+  - hook
+  - fintech
+  - price-flash
+  - table
+  - typescript
+  - datagrid
+  - trading
