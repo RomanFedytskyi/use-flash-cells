@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+*.log
+.DS_Store
+
+# sandbox / build temp artifacts
+.fuse_hidden*
+tsup.config.bundled_*.mjs
+*.timestamp-*.mjs
+
+# leftover files from initial Jest setup (superseded by vitest)
+jest.config.js
+tsconfig.test.json
+tsconfig.build.json
+tests/declarations.d.ts
